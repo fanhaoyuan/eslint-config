@@ -98,7 +98,6 @@ module.exports = {
         'new-parens': 'error',
         'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
         'no-array-constructor': 'error',
-        'no-bitwise': 'error',
         'no-lonely-if': 'error',
         'no-mixed-operators': 'error',
         'no-multi-assign': 'error',

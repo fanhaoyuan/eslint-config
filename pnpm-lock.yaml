@@ -6,6 +6,7 @@ specifiers:
   '@typescript-eslint/parser': ^4.22.1
   eslint: ^7.25.0
   eslint-config-prettier: ^8.3.0
+  eslint-plugin-prettier: ^4.2.1
   typescript: ^4.2.4
 
 dependencies:
@@ -13,6 +14,7 @@ dependencies:
   '@typescript-eslint/parser': 4.33.0_3rubbgt5ekhqrcgx4uwls3neim
   eslint: 7.32.0
   eslint-config-prettier: 8.5.0_eslint@7.32.0
+  eslint-plugin-prettier: 4.2.1_ycfaavsrvumh5dpcpdveopgtme
   typescript: 4.8.4
 
 devDependencies:
@@ -60,7 +62,7 @@ packages:
   /@fansy/prettier-config/1.0.0:
     resolution: {integrity: sha512-zevewtIYvHl9T7Ejkghng0eDbljWksqkvuEbje8ifILY+Vp4+Y77GxRk3HkQtMP0GEXq/UVDDd7f1+t/hb/qOQ==}
     dependencies:
-      prettier: 2.7.1
+      prettier: 2.8.3
     dev: true
 
   /@humanwhocodes/config-array/0.5.0:
@@ -415,6 +417,22 @@ packages:
       eslint: 7.32.0
     dev: false
 
+  /eslint-plugin-prettier/4.2.1_ycfaavsrvumh5dpcpdveopgtme:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 7.32.0
+      eslint-config-prettier: 8.5.0_eslint@7.32.0
+      prettier-linter-helpers: 1.0.0
+    dev: false
+
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -545,6 +563,10 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: false
+
+  /fast-diff/1.2.0:
+    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
     dev: false
 
   /fast-glob/3.2.12:
@@ -837,8 +859,15 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier/2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+  /prettier-linter-helpers/1.0.0:
+    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      fast-diff: 1.2.0
+    dev: false
+
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true

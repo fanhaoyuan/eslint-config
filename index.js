@@ -12,7 +12,7 @@ module.exports = {
     },
     overrides: [
         {
-            files: ['./**/*.ts'],
+            files: ['./**/*.ts', './**/*.tsx'],
             extends: ['./typescript.js', 'eslint-config-prettier'],
         },
     ],

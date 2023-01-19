@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    extends: ['./javascript.js', 'eslint-config-prettier'],
+    extends: ['./javascript.js', 'plugin:prettier/recommended'],
     parserOptions: {
         sourceType: 'module',
     },
@@ -13,7 +13,7 @@ module.exports = {
     overrides: [
         {
             files: ['./**/*.ts'],
-            extends: ['./typescript.js', 'eslint-config-prettier'],
+            extends: ['./typescript.js', 'plugin:prettier/recommended'],
         },
     ],
 };

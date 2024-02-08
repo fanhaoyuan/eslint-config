@@ -1,6 +1,6 @@
 {
     "name": "@fansy/eslint-config",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "main": "index.js",
     "repository": "https://github.com/fanhaoyuan/eslint-config.git",
     "author": "Fansy <418536538@qq.com>",
